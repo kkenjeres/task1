@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1356.502" height="495.028" viewBox="0 0 1356.502 495.028">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.177" y1="0.044" x2="0.907" y2="1.054" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#294289"/>
+      <stop offset="0.472" stop-color="#006f99"/>
+      <stop offset="0.723" stop-color="#00babd"/>
+      <stop offset="1" stop-color="#8cdddf"/>
+    </linearGradient>
+  </defs>
+  <g id="Blauverlauf" transform="translate(-16.533 -6.765)">
+    <path id="Rectangle" d="M16.648,49.308a8,8,0,0,1,7.689-9.34l1340.5-33.2a8,8,0,0,1,8.191,8.344l-17.043,392.994a8,8,0,0,1-7.442,7.634L100.95,501.773a8,8,0,0,1-8.437-6.639Z" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

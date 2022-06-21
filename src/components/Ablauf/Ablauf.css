@@ -1,0 +1,11 @@
+.subtitle {
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-subtitle);
+}
+.title {
+  font-size: 1.4em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
+}
