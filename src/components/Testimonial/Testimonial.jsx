@@ -1,5 +1,4 @@
 import React from 'react'
-import './Testimonial.css'
 import bgStripes from '../../assets/bgStripes.svg'
 import Carousel from '../Carousel'
 const Testimonial = () => {

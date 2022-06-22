@@ -28,7 +28,7 @@ const Navbar = () => {
     <div  className='flex navbar md:px-[7.5em] mt-[1em] justify-between items-center  px-[3em] text-xs md:text-tiny lg:text-base'>
         <img style={logo} src={nvReply} alt="Reply" id='logo'/>
         <div className='flex items-center'>
-          <div className=' underline hover:underline-offset-4 cursor-pointer flex items-center text-center mr-[1em] hidden md:flex'>
+          <div className=' underline hover:underline-offset-4 cursor-pointer  items-center text-center mr-[1em] hidden md:flex'>
             <img className='mr-[.5em]' src={Path} alt="arrow" />
             <span >Arbeitgeber</span>
           </div>

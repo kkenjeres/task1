@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
         </div>
         <span className='my-[2em] flex justify-center'>Copyright © 2021 ONE HIRING GmbH. All rights reserved.</span>
-        <button className='bg-[#2563EB] block m-auto px-[4em] py-[.8em] text-white border rounded-tl-[20px] rounded-tr-[20px]' >Kandidaten per Mail</button>
+        <button className='bg-[#2563EB] block m-auto px-[4em] py-[.8em] text-white rounded-tl-[20px] rounded-tr-[20px] transition ease-in-out duration-300 border-[#2563EB] hover:bg-white hover:text-black' >Kandidaten per Mail</button>
     </div>
   )
 }

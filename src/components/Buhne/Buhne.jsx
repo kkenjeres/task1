@@ -1,5 +1,4 @@
 import React from 'react'
-import './Buhne.css'
 import search from '../../assets/search.svg'
 import point from '../../assets/point.svg'
 import bg from '../../assets/bg.png'

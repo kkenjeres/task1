@@ -16,7 +16,7 @@ const Carousel = () => {
         <div className="md:flex container gap-5 m-auto mt-[3em] px-[3em]  ">
         {CarouselData.map(({position, author, image, content, index }) => {
                         return (
-                        <div style={shadow} className="p-[1em] w-[100%] " key={index}
+                        <div style={shadow} className="p-[1em] w-[100%] md:mb-0 mb-[1em]" key={index}
                         >
                             <img className="mb-[2em]" src={image}
                             alt=''
