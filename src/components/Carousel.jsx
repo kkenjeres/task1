@@ -13,7 +13,7 @@ const Carousel = () => {
       <AiOutlineLeft
             className="absolute left-0 text-[2em] inset-y-1/2 text-black cursor-pointer"
           />
-        <div className="md:flex  container gap-5 m-auto mt-[3em] px-[3em]  ">
+        <div className="md:flex container gap-5 m-auto mt-[3em] px-[3em]  ">
         {CarouselData.map(({position, author, image, content, index }) => {
                         return (
                         <div style={shadow} className="p-[1em] w-[100%] " key={index}

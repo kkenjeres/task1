@@ -12,5 +12,5 @@ export const CarouselData = [
         author:"Olaf Metzger",
         position:"Partner",
         active: false
-    }
+    },
   ];
