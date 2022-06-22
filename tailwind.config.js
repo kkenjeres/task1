@@ -6,7 +6,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      backgroundImage: {
+       }
     },
     fontSize: {
       'xs': '.75rem',

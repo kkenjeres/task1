@@ -44,7 +44,7 @@ const Kandidaten = () => {
 
     
   return (
-    <div className='mt-[10em]'>
+    <div className='mt-[10em] text-xs md:text-tiny lg:text-base'>
         <p className='title flex justify-content: center'>
         In nur wenigen Klicks zu passenden Kandidaten
         </p>

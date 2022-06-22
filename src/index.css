@@ -23,6 +23,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
+.bg {
+  background-image: url("./assets/bg.png");
+}
 .hovered:hover {
   background: #2563eb;
   color: #fff;

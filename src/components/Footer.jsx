@@ -4,9 +4,9 @@ import email from '../assets/email.svg'
 
 const Footer = () => {
   return (
-    <div class="flex flex-col bg-footer pt-[50px] text-white">
-        <div className='m-auto gap-24 lg:flex'>
-            <div className="col">
+    <div class="flex flex-col bg-footer pt-[50px] text-white text-xs md:text-tiny lg:text-base ">
+        <div className='m-auto gap-10 lg:gap-24 sm:flex '>
+            <div className="col ">
                 <div className="contact flex items-center">
                     <img className='mr-[1em]' src={phone} alt="phone" />
                     <p>+49 (0) 211 545 72 000</p>

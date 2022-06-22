@@ -9,19 +9,19 @@ const Carousel = () => {
     boxShadow: 'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px'
   }
   return (
-    <div className="relative lg:flex">
+    <div className="relative">
       <AiOutlineLeft
             className="absolute left-0 text-[2em] inset-y-1/2 text-black cursor-pointer"
           />
-        <div className="flex container gap-5 m-auto mt-[3em] ">
+        <div className="md:flex  container gap-5 m-auto mt-[3em] px-[3em]  ">
         {CarouselData.map(({position, author, image, content, index }) => {
                         return (
-                        <div style={shadow} className="p-[1em]" key={index}
+                        <div style={shadow} className="p-[1em] w-[100%] " key={index}
                         >
                             <img className="mb-[2em]" src={image}
                             alt=''
                             />
-                            <div className="align-baseline flex-col justify-space">
+                            <div className="">
                               <p className="mb-[1em]">{content}</p>
                               <p className="mb-[.85em] font-bold">{author}</p>
                               <p>{position}</p>
