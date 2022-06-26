@@ -17,6 +17,7 @@
   --fs-content: 1em;
   --fs-subtitle: 1.22em;
   --fw-subtitle: Bold;
+  --tc-subtitle: black;
 }
 
 body {
@@ -31,7 +32,9 @@ body {
   color: #fff;
   transition: 0.3s ease-in-out;
 }
-
+.bg_lines {
+  background-image: url("./assets/lines.svg");
+}
 a:hover {
   color: #03dac5;
   transition: 0.2s ease-in-out;
@@ -39,6 +42,7 @@ a:hover {
 .subtitle {
   font-size: var(--fs-subtitle);
   font-weight: var(--fw-subtitle);
+  color: var(--tc-subtitle);
 }
 
 .links {
@@ -51,4 +55,20 @@ a:hover {
   background: #fff;
   color: #000;
   transition: 0.3s ease-in-out;
+}
+
+.slick-list {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.slick-slider {
+  display: flex !important;
+  justify-content: center !important;
+}
+.slick-slide {
+  display: flex !important;
+  padding: 10px;
+  min-height: 450px !important;
 }

@@ -1,129 +1,85 @@
-import React, { Component } from "react";
-import { CarouselData } from "./CarouselData";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import Swipe from "react-easy-swipe";
+import React from "react";
+import {CarouselData} from "./CarouselData";
+import Linkspfeil from '../assets/Linkspfeil.svg'
+import Rechtspfeil from '../assets/Rechtspfeil.svg'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
-const Carousel = () => {
-  const shadow = {
-    boxShadow: 'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px'
+function Carousel() {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+  function SampleNextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        className="w-[20px] flex absolute inset-y-0 right-0 md:w-[50px]"
+        onClick={onClick}
+      >
+        <img src={Rechtspfeil} alt="links" />
+      </div>
+    );
   }
-  return (
-    <div className="relative">
-      <AiOutlineLeft
-            className="absolute left-0 text-[2em] inset-y-1/2 text-black cursor-pointer"
-          />
-        <div className="md:flex container gap-5 m-auto mt-[3em] px-[3em]  ">
-        {CarouselData.map(({position, author, image, content, index }) => {
-                        return (
-                        <div style={shadow} className="p-[1em] w-[100%] md:mb-0 mb-[1em]" key={index}
-                        >
-                            <img className="mb-[2em]" src={image}
-                            alt=''
-                            />
-                            <div className="">
-                              <p className="mb-[1em]">{content}</p>
-                              <p className="mb-[.85em] font-bold">{author}</p>
-                              <p>{position}</p>
-                            </div>
-                        </div>
-                        )
-                    })
-                    }
-        </div>
-        <AiOutlineRight
-            className="absolute right-0 text-[2em] inset-y-1/2 text-black cursor-pointer"
-          />
-    </div>
-  )
+  
+  function SamplePrevArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        className='w-[20px] flex absolute inset-y-0 left-0 md:w-[50px]'
+        onClick={onClick}
+      >
+        <img src={Linkspfeil} alt="links" />
+      </div>
+    );
+  }
+  return ( 
+    <div className="w-full mt-[100px]">
+      <Slider {...settings}>
+          {CarouselData.map((card, index) => { return (
+              <div className="px-[1em] py-[3em] h-[500px] shadow-xl" key={index} >
+                <img src={card.image} alt="rechts" />
+                <p className="mt-[2em]">{card.content}</p>
+                <p className="mt-[2em]">{card.author}</p>
+                <p className="text-[#676767]">{card.position}</p>
+              </div>
+            )})}
+      </Slider>
+  </div>
+  );
 }
-
-export default Carousel
-
-// class Carousel extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       currentSlide: 0,
-//       paused: false,
-//     };
-//   }
-
-//   nextSlide = () => {
-//     let newSlide =
-//       this.state.currentSlide === CarouselData.length - 1
-//         ? 0
-//         : this.state.currentSlide + 1;
-//     this.setState({ currentSlide: newSlide });
-//   };
-
-//   prevSlide = () => {
-//     let newSlide =
-//       this.state.currentSlide === 0
-//         ? CarouselData.length - 1
-//         : this.state.currentSlide - 1;
-//     this.setState({ currentSlide: newSlide });
-//   };
-
-//   setCurrentSlide = (index) => {
-//     this.setState({ currentSlide: index });
-//   };
-
-//   render() {
-//     return (
-//       <div className="m-auto flex justify-center relative md:flex mt-[3em]">
-//         <div className=" flex overflow-hidden ">
-//           <AiOutlineLeft
-//             onClick={this.prevSlide}
-//             className="absolute left-0 text-[2em] inset-y-1/2 text-black cursor-pointer"
-//           />
-
-//           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
-//             <div className="flex container">
-                // {CarouselData.map(({position, author, image, content, index }) => {
-                //         return (
-                //         <div className="border-2 border-sky-500 bg-gray-200" key={index}
-                //         >
-                //             <img className="mb-[1em]" src={image}
-                //             alt=''
-                //             />
-                //             <p className="mb">{content}</p>
-                //             <p>{author}</p>
-                //             <p>{position}</p>
-                //         </div>
-                //         )
-                //     })
-                //     }
-//             </div>
-
-//             {/* {CarouselData.map((slide, content ,author, index) => {
-//               return (
-//                 <div>
-//                     <p>{content}</p>
-//                     <p>{author}</p>
-//                     <img
-//                       src={slide.image}
-//                       alt="This is a carousel slide"
-//                       key={index}
-//                       className={
-//                         index === this.state.currentSlide
-//                           ? "block w-full h-auto object-cover"
-//                           : "hidden"
-//                       }
-//                     />
-
-//                 </div>
-//               );
-//             })} */}
-//           </Swipe>
-//           <AiOutlineRight
-//             onClick={this.nextSlide}
-//             className="absolute right-0 text-[2em] inset-y-1/2 text-black cursor-pointer"
-//           />
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
-// export default Carousel;
+export default Carousel;

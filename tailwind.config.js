@@ -6,8 +6,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      important: true,
       backgroundImage: {
        }
+    },
+    container: {
+      center: true,
+      
     },
     fontSize: {
       'xs': '.75rem',
