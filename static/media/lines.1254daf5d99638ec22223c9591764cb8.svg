@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="304.837" height="216.931" viewBox="0 0 304.837 216.931">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.046" y1="0.046" x2="1.012" y2="0.895" gradientUnits="objectBoundingBox">
+      <stop offset="0.115" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#f3f4f6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.048" y1="0.048" x2="0.97" y2="0.934" gradientUnits="objectBoundingBox">
+      <stop offset="0.354" stop-color="#2563eb"/>
+      <stop offset="0.995" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.049" y1="0.049" x2="0.997" y2="0.904" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03dac5" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#f6f6f6" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_1" data-name="Сгруппировать 1" transform="translate(-1135.163 -120.59)">
+    <path id="Path" d="M8.646,9.214a33.014,33.014,0,0,0-.009,44.538L137.029,190.817a28.236,28.236,0,0,0,41.748.014,33,33,0,0,0,.009-44.538L50.394,9.228A28.236,28.236,0,0,0,8.646,9.214Z" transform="translate(1252.573 137.475)" opacity="0.5" fill="url(#linear-gradient)"/>
+    <path id="Path-2" data-name="Path" d="M9.749,9.932A34.417,34.417,0,0,0,9.73,57.913L146.915,197.987a32.766,32.766,0,0,0,47.012.017,34.408,34.408,0,0,0,.018-47.981L56.77,9.947A32.776,32.776,0,0,0,9.749,9.932Z" transform="translate(1136.628 120.59)" opacity="0.5" fill="url(#linear-gradient-2)"/>
+    <path id="Path-3" data-name="Path" d="M5.543,5.816A20.62,20.62,0,0,0,5.534,33.94l74.176,78.175a18.206,18.206,0,0,0,26.7.009A20.63,20.63,0,0,0,106.42,84L32.245,5.825A18.222,18.222,0,0,0,5.543,5.816Z" transform="translate(1135.163 201.947)" opacity="0.5" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>
